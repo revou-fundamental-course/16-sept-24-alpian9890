@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+	  <nav>
+		<ul>
+		  <li><a href="#section_home">Home</a></li>
+		  <li><a href="#section_portfolio">Portfolio</a></li>
+		  <li><a href="#section_contact">Contact</a></li>
+		  <li><a href="#section_profile">My Profile</a></li>
+		</ul>
+	  </nav>
+    </header>
+
+    <main>
+	  <section id="section_home">
+		<div class="banner-container">
+		  <img src="assets/mybanner1.png" alt="Banner 1" class="banner-image">
+		  <img src="assets/mybanner2.png" alt="Banner 2" class="banner-image">
+		  <img src="assets/mybanner3.png" alt="Banner 3" class="banner-image">
+		</div>
+	  </section>
+
+	  <section id="section_portfolio">
+		<h2>Portfolio</h2>
+		<!-- bingung isi apa -->
+	  </section>
+
+	  <section id="section_profile">
+		<h2>My Profile</h2>
+		<!-- Isi profile social media nanti-->
+	  </section>
+	  
+	  <section id="section_contact">
+		<h2>Contact</h2>
+		<div class="contact_container">
+		<form id="contactForm">
+		  <label for="nama">Nama:</label>
+		  <input type="text" id="nama" name="nama" required>
+
+		  <label for="tanggalLahir">Tanggal Lahir:</label>
+		  <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+
+		  <fieldset>
+			<legend>Jenis Kelamin:</legend>
+			<input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+			<label for="lakiLaki">Laki-Laki</label>
+			<input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+			<label for="perempuan">Perempuan</label>
+		  </fieldset>
+
+		  <label for="pesan">Pesan:</label>
+		  <textarea id="pesan" name="pesan" required></textarea>
+
+		  <button type="submit">Submit</button>
+		</form>
+
+		<div class="table-container">
+		  <h3>Submitted Data</h3>
+		  <div class="table-actions">
+			<button id="editButton" disabled>Edit</button>
+			<button id="deleteButton" disabled>Hapus</button>
+		  </div>
+		  <table id="submittedData">
+			<thead>
+			  <tr>
+				<th><input type="checkbox" id="selectAll"></th>
+				<th>Nama</th>
+				<th>Tanggal Lahir</th>
+				<th>Jenis Kelamin</th>
+				<th>Pesan</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <!-- hasil submit muncul disini -->
+			</tbody>
+		  </table>
+		</div>
+		</div>
+	  </section>
+
+	  
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+  <footer>
+	<p>&copy; 2024 ALV's Portfolio Website.</p>
+  </footer>
+</html>
