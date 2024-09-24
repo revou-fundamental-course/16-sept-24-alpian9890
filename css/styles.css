@@ -129,7 +129,7 @@ h2 {
 .logo-icon {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/my-logo.png'); 
+  background-image: url('assets/my-logo.png'); 
   background-size: cover;
   background-position: center;
   border-radius: 50%;
