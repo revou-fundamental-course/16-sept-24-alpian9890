@@ -158,8 +158,24 @@ h2 {
     position: relative;
     height: 178px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
+#capruk1 {
+  background-image: url('../assets/mybanner1.png');
+  background-size: cover;
+  background-position: center;
+}
+#capruk2 {
+  background-image: url('../assets/mybanner2.png');
+  background-size: cover;
+  background-position: center;
+}
+#capruk3 {
+  background-image: url('../assets/mybanner3.png');
+  background-size: cover;
+  background-position: center;
+}
 .banner-image {
     position: absolute;
     top: 0;
@@ -494,18 +510,10 @@ footer .credit a:hover {
         max-width: 1366px;
         max-height: 578px;
         margin: 0 auto;
+        border-radius: 30px;
     }
     
-    #welcome-popup {
-      width: 500px;
-      display: flex;
-      padding: 50px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      border-radius: 35px;
-      border: 1.7px solid #ff0;
-    }
+    
     #section_contact {
       margin-left: 5%;
       margin-right: 5%;
@@ -554,6 +562,19 @@ footer .credit a:hover {
 
 /* Responsive width 900+ */
 @media screen and (min-width: 900px) {
+     #welcome-popup {
+      width: 500px;
+      display: flex;
+      padding: 50px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-radius: 35px;
+      border: 1.7px solid #ff0;
+    }
+    .banner-container {
+        border-radius: 40px;
+    }
       .contact_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
