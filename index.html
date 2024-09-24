@@ -3,27 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Mini Project | @alpian9890</title>
+    
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
-	  <nav>
+    <header class="main-header">
+<div class="logo-icon">
+      </div>
+	  <nav id="top_nav"class="nav-header">
 		<ul>
-		  <li><a href="#section_home">Home</a></li>
-		  <li><a href="#section_portfolio">Portfolio</a></li>
-		  <li><a href="#section_contact">Contact</a></li>
-		  <li><a href="#section_profile">My Profile</a></li>
+		  <li><a class="a-home" href="#section_home">Home</a></li>
+		  <li><a class="a-portfolio" href="#section_portfolio">Portfolio</a></li>
+		  <li><a class="a-contact" href="#section_contact">Message Us</a></li>
+		  <li><a class="a-profile" href="#section_profile">Our Profile</a></li>
 		</ul>
 	  </nav>
     </header>
 
+   <div id="overlay"></div>
+<div id="welcome-popup">
+    <h2 class="selamat-datang">Selamat Datang!</h2>
+    <form id="welcome-form">
+        <label for="welcome_name">Masukkan Nama Anda:</label>
+        <input type="text" id="welcome_name" name="welcome_name" required>
+        <button type="submit" id="submit_welcome">Submit</button>
+    </form>
+</div>
+
+
+
+    <div class="main-content">
+    
     <main>
 	  <section id="section_home">
+	    <div class="say-hello-container">
+		    <h3>Hi! <span id="hai_nama" class="color-accent">...</span> Welcome to
+	    Website</h3>
+	    <p class="p-welcome">latihan web profile</p>
+	    <button id="editName">Edit nama</button>
+	    </div>
 		<div class="banner-container">
+		  
 		  <img src="assets/mybanner1.png" alt="Banner 1" class="banner-image">
 		  <img src="assets/mybanner2.png" alt="Banner 2" class="banner-image">
 		  <img src="assets/mybanner3.png" alt="Banner 3" class="banner-image">
+		  
 		</div>
 	  </section>
 
@@ -33,12 +64,12 @@
 	  </section>
 
 	  <section id="section_profile">
-		<h2>My Profile</h2>
+		<h2>Our <span class="color-accent-2">Profile</span></h2>
 		<!-- Isi profile social media nanti-->
 	  </section>
 	  
 	  <section id="section_contact">
-		<h2>Contact</h2>
+		<h2>Message <span class="color-accent-2">Us</span></h2>
 		<div class="contact_container">
 		<form id="contactForm">
 		  <label for="nama">Nama:</label>
@@ -48,7 +79,7 @@
 		  <input type="date" id="tanggalLahir" name="tanggalLahir" required>
 
 		  <fieldset>
-			<legend>Jenis Kelamin:</legend>
+			<legend class="jenis-kelamin">Jenis Kelamin:</legend>
 			<input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
 			<label for="lakiLaki">Laki-Laki</label>
 			<input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
@@ -62,7 +93,7 @@
 		</form>
 
 		<div class="table-container">
-		  <h3>Submitted Data</h3>
+		  <h3>Submitted <span class="color-accent-2">Data</span></h3>
 		  <div class="table-actions">
 			<button id="editButton" disabled>Edit</button>
 			<button id="deleteButton" disabled>Hapus</button>
@@ -84,13 +115,50 @@
 		</div>
 		</div>
 	  </section>
-
-	  
     </main>
+    
+     <nav class="bottom-nav">
+    <ul>
+		  <li><a class="a-home" href="#section_home">Home</a></li>
+		  <li><a class="a-portfolio" href="#section_portfolio">Portfolio</a></li>
+		  <li><a class="a-contact" href="#section_contact">Message Us</a></li>
+		  <li><a class="a-profile" href="#section_profile">Our Profile</a></li>
+		</ul>
+</nav>
 
-    <script src="js/script.js"></script>
-  </body>
-  <footer>
-	<p>&copy; 2024 ALV's Portfolio Website.</p>
+<div class="followMe">
+  <div class="follow-me">
+    <p class="follow-me-on">Follow me on </p>
+    </div>
+   
+  <div class="sosmed-platforms">
+    <p class="socialMedia"></p>
+  </div>
+</div>
+
+       <footer id="my-footer">
+    <div id="my-socmed" class="socials">
+      <a href="https://www.instagram.com/alpian9890" target="_blank" id="instagram-link"></a>
+      <a href="https://t.me/Hamster_kombat_bot/start?startapp=kentId6069426587" target="_blank" id="telegram-link"></a>
+<a href="https://github.com/alpian9890" target="_blank" id="github-link"></a>
+    </div>
+
+    <div class="links">
+      <a class="a-home" href="#section_home">Home</a>
+      <a class="a-portfolio" href="#section_portfolio">Portfolio</a>
+      <a class="a-contact" href="#section_contact">Message Us</a>
+      <a class="a-profile" href="#section_profile">Our Profile</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="https://www.instagram.com/alpian9890" target="_blank">alpian9890</a>. | &copy; 2024.</p>
+    </div>
   </footer>
+    
+    
+    </div>
+    
+    <script src="js/script.js"></script>
+    
+  </body>
 </html>
