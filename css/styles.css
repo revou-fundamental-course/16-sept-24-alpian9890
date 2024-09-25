@@ -199,6 +199,18 @@ h2 {
   color: #ff0;
 }
 
+.portfolio-img1 {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-img2 {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-img3 {
+  width: 100%;
+  height: 100%;
+}
 /* Contact form */
 form {
     display: flex;
@@ -215,6 +227,9 @@ form {
 #contactForm input {
   background-color: var(--bg);
   border:1.5px solid rgba(255,255,0,0.2);
+}
+#tanggalLahir {
+  width: 100%;
 }
 #contactForm textarea {
   background-color: var(--bg);
@@ -261,7 +276,18 @@ button:disabled {
 fieldset {
     border: none;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: space-between;
 }
+
+fieldset input{
+  margin-right: 10px;
+}
+
+fieldset #perempuan {
+  margin-left: 30px;
+}
+
 
 .main-content {
   display: grid;
@@ -277,13 +303,19 @@ fieldset {
   height: 200px;
 }
 
+strong {
+  color :#00b0ff;
+}
+
 .followMe {
   display: none;
   flex-direction: row;
   justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 .followMe p {
-  color: #ff0;
+  color: rgba(255,255,0, 0.7);
 }
 .followMe .follow-me {
   display: flex;
@@ -313,7 +345,6 @@ fieldset {
 .hidden {
   display: none;
 }
-
 
 /* sosmed platform anim start */
 .socialMedia {
@@ -558,6 +589,12 @@ footer .credit a:hover {
     footer {
       padding: 0;
     }
+    .followMe .follow-me {
+     width: 50%;
+    }
+    .followMe .sosmed-platforms {
+    width: 50%;
+    }
 }
 
 /* Responsive width 900+ */
@@ -583,6 +620,7 @@ footer .credit a:hover {
     .followMe {
       display: flex;
     }
+
     .bottom-nav {
       border-radius: 0 0 50px 50px;
       border: 2.5px solid rgba(255,255,0,0.3);
