@@ -77,6 +77,14 @@ h2 {
   margin-right: 3%;
   border: 2px solid rgba(255,255,0,0.3);
   border-radius: 30px;
+  box-sizing: border-box;
+}
+
+/* Responsive content */
+#section_portfolio .portfolio-container .portfolio-item {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /* judul */
@@ -139,16 +147,17 @@ h2 {
   background-position: center;
   border-radius: 25px 25px 0 0;
   padding: 1rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  display: grid;
+  height: 250px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 /* pembungkus judul project */
 .PIC-container .box-center {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* div image content */
@@ -156,11 +165,18 @@ h2 {
   margin-bottom: 14px;
 }
 
+.judul-portfolio {
+  font-size: 2.3em;
+  background-image: linear-gradient(to bottom, #ff0, #BF1D50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* pembungkus text judul dan paragraph */
 .portfolio-text-container {
   background-color: #0e0e0e;
   padding: 1rem;
   border-radius: 0 0 25px 25px;
+  height: 8rem;
 }
 
 /* div welcome bg */
@@ -170,7 +186,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:rgba(0,0,0,0.2);
     z-index: 1000;
     display: none;
 }
@@ -293,34 +309,33 @@ h2 {
   color: #ff0;
 }
 
-/*.portfolio-container {
-  
-}*/
-
 /* portfolio image circle */
 #portfolio-img1 {
-  width: 128px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url('../assets/mybanner1.png');
   background-size: cover;
   background-position: center;
+  margin-top: 30px;
 }
 #portfolio-img2 {
-  width: 128px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url('../assets/mybanner2.png');
   background-size: cover;
   background-position: center;
+  margin-top: 30px;
 }
 #portfolio-img3 {
-  width: 128px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url('../assets/mybanner3.png');
   background-size: cover;
   background-position: center;
+  margin-top: 30px;
 }
 
 
@@ -753,8 +768,10 @@ footer .credit a:hover {
         border-radius: 40px;
     }
     
+    /* Responsive portfolio */
     .portfolio-container {
       display: flex;
+      justify-content: space-between;
     }
     
     #section_profile {
