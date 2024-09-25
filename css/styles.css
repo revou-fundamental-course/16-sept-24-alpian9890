@@ -74,26 +74,66 @@ h2 {
 #section_portfolio {
   margin-left: 3%;
   margin-right: 3%;
+  border: 2px solid rgba(255,255,0,0.3);
+  border-radius: 30px;
+}
+
+#section_portfolio h2 {
+  background-color: #000;
+  border-radius: 30px 30px 0 0;
+  border-bottom: 2px solid rgba(255,255,0,0.3);
+  padding-left: 20px;
 }
 
 #section_profile {
   margin-left: 3%;
   margin-right: 3%;
+  border: 2px solid rgba(255,255,0,0.3);
+  border-radius: 30px;
+  padding: 0.1rem;
+}
+
+#section_profile h2 {
+  background-color: #000;
+  border-radius: 30px 30px 0 0;
+  border-bottom: 2px solid rgba(255,255,0,0.3);
+  padding-left: 20px;
+}
+
+.profile-container {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 #section_contact {
   margin-left: 3%;
   margin-right: 3%;
+  border: 3px solid rgba(255,255,0,0.2);
+  border-radius: 30px;
+  padding-bottom: 1rem;
+}
+
+#section_contact h2 {
+  background-color: #000;
+  border-radius: 30px 30px 0 0;
+  padding-left: 20px;
+  border-bottom: 2px solid rgba(255,255,0,0.3);
 }
 
 .portfolio-item {
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .portfolio-img-content {
   margin-bottom: 14px;
 }
 
+.portfolio-text-container {
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 10px;
+}
 #overlay {
     position: fixed;
     top: 0;
@@ -258,7 +298,11 @@ form {
   border: 3px solid rgba(255,255,0,0.2);
   border-radius: 10px;
   padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+
 #contactForm input {
   background-color: var(--bg);
   border:1.5px solid rgba(255,255,0,0.2);
@@ -452,6 +496,8 @@ strong {
 /* Table styles */
 .table-container {
     overflow-x: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .table-actions {
@@ -659,6 +705,10 @@ footer .credit a:hover {
     
     .portfolio-container {
       display: flex;
+    }
+    
+    #section_profile {
+      width: 45%;
     }
     
     .portfolio-item {
