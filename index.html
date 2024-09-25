@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Judul -->
     <title>Mini Project | @alpian9890</title>
     
     <!-- Fonts -->
@@ -11,13 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
     rel="stylesheet">
     
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="css/styles.css">
       
   </head>
   <body>
     <header class="main-header">
+ 
+ <!-- Logo header -->     
 <div class="logo-icon">
       </div>
+     
+     <!-- Nav atas --> 
 	  <nav id="top_nav"class="nav-header">
 		<ul>
 		  <li><a class="a-home" href="#section_home">Home</a></li>
@@ -26,9 +33,13 @@
 		  <li><a class="a-profile" href="#section_profile">Our Profile</a></li>
 		</ul>
 	  </nav>
+	  
     </header>
-
+    
+    <!-- background aja -->
    <div id="overlay"></div>
+ 
+ <!-- sambutan | ketik nama -->  
 <div id="welcome-popup">
     <h2 class="selamat-datang">Selamat Datang!</h2>
     <form id="welcome-form">
@@ -40,74 +51,113 @@
 
 
 
-    <div class="main-content">
-    
+    <div class="main-content"><!-- pembungkus aja -->
     <main>
 	  <section id="section_home">
+	    
+	    <!-- Say hello -->
 	    <div class="say-hello-container">
 		    <h3>Hi! <span id="hai_nama" class="color-accent">...</span> Welcome to
 	    Website</h3>
 	    <p class="p-welcome">latihan web profile</p>
 	    <button id="editName">Edit nama</button>
 	    </div>
+	    
+	  <!-- Banner image -->  
 		<div class="banner-container">
-		  
 		  <div id="capruk1" class="banner-image"></div>
 		  <div id="capruk2" class="banner-image"></div>
 		  <div id="capruk3" class="banner-image"></div>
 		  <!--<img src="assets/mybanner1.png" alt="Banner 1" class="banner-image">
 		  <img src="assets/mybanner2.png" alt="Banner 2" class="banner-image">
 		  <img src="assets/mybanner3.png" alt="Banner 3" class="banner-image">-->
-		  
 		</div>
+		
 	  </section>
 
+
+
 	  <section id="section_portfolio">
+	    
     <h2 class="color-accent-2">Portfolio</h2>
+    
     <div class="portfolio-container">
+      
+      <!-- pembungkus bg image dan judul -->
         <div class="portfolio-item">
+          
+          <!-- pembungkus bg image -->
           <div class="PIC-container">
             <div id="portfolio-img1" class="portfolio-img-content"></div>
+            <!-- pembungkus judul -->
             <div class="box-center">
             <h1 class="color-accent">Free lunch</h1>
             </div>
+            
             </div>
+            
+            <!-- pembungkus konten teks -->
             <div class="portfolio-text-container">
             <h3 class="color-accent-2">Project 1: Free lunch</h3>
             <p>Balabala blabla bbla babbal bababllab ba bla alaba</p>
             </div>
+            
         </div>
+        
+        <!-- pembungkus bg image dan judul -->
         <div class="portfolio-item">
+          
+        <!-- pembungkus bg image -->  
             <div class="PIC-container">
             <div id="portfolio-img2" class="portfolio-img-content"></div>
+           
+           <!-- pembungkus judul -->
             <div class="box-center">
             <h1 class="color-accent">IKN</h1>
             </div>
+            
             </div>
+            
+          <!-- pembungkus konten teks -->  
             <div class="portfolio-text-container">
             <h1 class="color-accent-2">Project 2: IKN</h1>
             <p>lorem ipsum amk! Namak Jwowuwjnw jsa Ceounsn AnamkJw Jaabba</p>
             </div>
+            
         </div>
+        
+         <!-- pembungkus bg image dan judul -->
         <div class="portfolio-item">
+          
+          <!-- pembungkus bg image -->  
           <div class="PIC-container">
             <div id="portfolio-img3" class="portfolio-img-content"></div>
+            
+            <!-- pembungkus judul -->
             <div class="box-center">
             <h1 class="color-accent">Tapera</h1>
             </div>
+            
             </div>
+            
+            <!-- pembungkus konten teks -->  
             <div class="portfolio-text-container">
-              <div class="box-center">
             <h1 class="color-accent-2">Project 3: Tapera</h1>
-            </div>
             <p>hYaan Aiuab Bahauau anannaj ahuWh ahaUaAuGAHA jaija Uwtw</p>
             </div>
+            
         </div>
+        
     </div>
+    
 </section>
 
+<!-- profile -->
 <section id="section_profile">
+  <!-- judul -->
     <h2 class="color-accent-2">Our Profile</h2>
+    
+    <!-- pembunhkus konten teks -->
     <div class="profile-container">
         <p><strong>Sejarah: </strong>Perusahaan Fufufafa didirikan pada tahun
         6969 dengan tujuan memberikan solusi inovatif.</p>
@@ -116,12 +166,18 @@
         <p><strong>Misi:</strong> Menggunakan program free lunch(syart&ketentuan berlaku) untuk menciptakan
         solusi yang mendukung keberlanjutan generasi&copy; emas.</p>
     </div>
+    
 </section>
 
-	  
+	  <!-- Contact -->
 	  <section id="section_contact">
+	    <!-- judul -->
 		<h2 class="color-accent-2">Message Us</h2>
+		
+        <!-- pembungkus form dan table -->
 		<div class="contact_container">
+          
+          <!-- form -->
 		<form id="contactForm">
 		  <label for="nama">Nama:</label>
 		  <input type="text" id="nama" name="nama" required>
@@ -143,6 +199,7 @@
 		  <button type="submit">Submit</button>
 		</form>
 
+        <!-- table -->
 		<div class="table-container">
 		  <h3 class="color-accent-2">Submitted Data</h3>
 		  <div class="table-actions">
@@ -164,50 +221,69 @@
 			</tbody>
 		  </table>
 		</div>
+        
 		</div>
+        
 	  </section>
+      
     </main>
     
-     <nav class="bottom-nav">
-    <ul>
-		  <li><a class="a-home" href="#section_home">Home</a></li>
-		  <li><a class="a-portfolio" href="#section_portfolio">Portfolio</a></li>
-		  <li><a class="a-contact" href="#section_contact">Message Us</a></li>
-		  <li><a class="a-profile" href="#section_profile">Our Profile</a></li>
-		</ul>
-</nav>
+    <!-- bottom nav -->
+      <nav class="bottom-nav">
+        <ul>
+          <li><a class="a-home" href="#section_home">Home</a></li>
+          <li><a class="a-portfolio" href="#section_portfolio">Portfolio</a></li>
+          <li><a class="a-contact" href="#section_contact">Message Us</a></li>
+          <li><a class="a-profile" href="#section_profile">Our Profile</a></li>
+        </ul>
+      </nav>
+     
 
+      <!-- pembungkus teks follow me -->
 <div class="followMe">
+  
+  <!-- pembungkus P -->
   <div class="follow-me">
     <p class="follow-me-on">Follow me on </p>
     </div>
    
+    <!-- pembungkus teks platform -->
   <div class="sosmed-platforms">
     <p class="socialMedia"></p>
   </div>
+  
 </div>
 
-       <footer id="my-footer">
-    <div id="my-socmed" class="socials">
-      <a href="https://www.instagram.com/alpian9890" target="_blank" id="instagram-link"></a>
-      <a href="https://t.me/Hamster_kombat_bot/start?startapp=kentId6069426587" target="_blank" id="telegram-link"></a>
-<a href="https://github.com/alpian9890" target="_blank" id="github-link"></a>
-    </div>
+     <!-- Footer -->
+      <footer id="my-footer">
+        <!-- div social media -->
+        <div id="my-socmed" class="socials">
+          <a href="https://www.instagram.com/alpian9890" target="_blank" id="instagram-link"></a>
+          
+          <!-- link keberuntungan -->
+          <a href="https://t.me/Hamster_kombat_bot/start?startapp=kentId6069426587" target="_blank" id="telegram-link"></a>
+          
+          <a href="https://github.com/alpian9890" target="_blank" id="github-link"></a>
+        </div>
 
-    <div class="links">
-      <a class="a-home" href="#section_home">Home</a>
-      <a class="a-portfolio" href="#section_portfolio">Portfolio</a>
-      <a class="a-contact" href="#section_contact">Message Us</a>
-      <a class="a-profile" href="#section_profile">Our Profile</a>
-    </div>
-
-    <div class="credit">
-      <p>Created by <a href="https://www.instagram.com/alpian9890" target="_blank">alpian9890</a>. | &copy; 2024.</p>
-    </div>
-  </footer>
+        <!-- navigasi -->
+        <div class="links">
+          <a class="a-home" href="#section_home">Home</a>
+          <a class="a-portfolio" href="#section_portfolio">Portfolio</a>
+          <a class="a-contact" href="#section_contact">Message Us</a>
+          <a class="a-profile" href="#section_profile">Our Profile</a>
+        </div>
+        
+        <!-- credit -->
+        <div class="credit">
+          <p>Created by <a href="https://www.instagram.com/alpian9890" target="_blank">alpian9890</a>. | &copy; 2024.</p>
+        </div>
+        
+      </footer>
+       
     
     
-    </div>
+    </div><!-- end pembungkus main -->
     
     <script src="js/script.js"></script>
     

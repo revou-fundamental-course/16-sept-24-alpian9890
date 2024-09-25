@@ -1,4 +1,4 @@
-:root {
+:root {/*var color*/
   --primary: #81E6D9;
   --bg: #111;
 }
@@ -71,6 +71,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* portfolio section */
 #section_portfolio {
   margin-left: 3%;
   margin-right: 3%;
@@ -78,13 +79,14 @@ h2 {
   border-radius: 30px;
 }
 
+/* judul */
 #section_portfolio h2 {
   background-color: #000;
   border-radius: 30px 30px 0 0;
   border-bottom: 2px solid rgba(255,255,0,0.3);
   padding-left: 20px;
 }
-
+/* profile section */
 #section_profile {
   margin-left: 3%;
   margin-right: 3%;
@@ -93,6 +95,7 @@ h2 {
   padding: 0.1rem;
 }
 
+/* judul */
 #section_profile h2 {
   background-color: #000;
   border-radius: 30px 30px 0 0;
@@ -100,12 +103,14 @@ h2 {
   padding-left: 20px;
 }
 
+/* div pembungkus */
 .profile-container {
   background-color: #111;
   padding: 20px;
   border-radius: 20px;
 }
 
+/* contact section */
 #section_contact {
   margin-left: 3%;
   margin-right: 3%;
@@ -114,6 +119,7 @@ h2 {
   padding-bottom: 1rem;
 }
 
+/* judul */
 #section_contact h2 {
   background-color: #000;
   border-radius: 30px 30px 0 0;
@@ -121,10 +127,12 @@ h2 {
   border-bottom: 2px solid rgba(255,255,0,0.3);
 }
 
+/* margin aja */
 .portfolio-item {
   margin: 1rem;
 }
 
+/* pembungkus image circle container */
 .PIC-container {
   background-image: url('../assets/bg-portfolio.png');
   background-size: cover;
@@ -135,21 +143,27 @@ h2 {
   justify-content: start;
   align-items: center;
 }
+
+/* pembungkus judul project */
 .PIC-container .box-center {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+/* div image content */
 .portfolio-img-content {
   margin-bottom: 14px;
 }
 
+/* pembungkus text judul dan paragraph */
 .portfolio-text-container {
   background-color: #0e0e0e;
   padding: 1rem;
   border-radius: 0 0 25px 25px;
 }
+
+/* div welcome bg */
 #overlay {
     position: fixed;
     top: 0;
@@ -161,12 +175,12 @@ h2 {
     display: none;
 }
 
+/* div input nama welcome */
 #welcome-popup {
     position: fixed;
     top: 50%;
     left: 50%;
     width: 300px;
-    
     transform: translate(-50%, -50%);
     background-color: #212;
     padding: 20px;
@@ -179,12 +193,12 @@ h2 {
     align-items: center;
 }
 
-
-
+/* judul input welcome */
 .selamat-datang {
   margin-top: 1.1rem;
 }
 
+/* input welcome */
 #welcome_name {
     color: #ff0;
     text-shadow: 0 0 50px #fff;
@@ -195,6 +209,7 @@ h2 {
     border: 1.5px solid rgba(255,255,0,0.2);
 }
 
+/* paragraph welcome */
 .p-welcome {
   color: #ff0;
 }
@@ -203,22 +218,24 @@ h2 {
 .logo-icon {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/my-logo.png'); 
+  background-image: url('../assets/my-logo.png');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   margin-left: 3%;
 }
 
-
+/* nav header */
 .nav-header {
   display: flex;
 }
 
+/* div pembungkus tampilan welcome name */
 .say-hello-container {
   margin-bottom: 1.5%;
   margin-left: 2%;
 }
+/* tombol edit welcome */
 #editName {
   padding: 2px;
   border-radius: 6px;
@@ -227,7 +244,6 @@ h2 {
 
 
 /* Banner */
-
 .banner-container {
     position: relative;
     height: 178px;
@@ -235,6 +251,7 @@ h2 {
     border-radius: 20px;
 }
 
+/* div image banner - source */
 #capruk1 {
   background-image: url('../assets/mybanner1.png');
   background-size: cover;
@@ -250,6 +267,8 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+
+/* banner-image style */
 .banner-image {
     position: absolute;
     top: 0;
@@ -258,26 +277,27 @@ h2 {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-}
-
+} /* auto slide */
 .banner-image.active {
     opacity: 1;
 }
 
+/* aksen warna utama */
 .color-accent {
   background-image: linear-gradient(to bottom, #ff0, #BF1D50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* aksen warna kedua */
 .color-accent-2 {
   color: #ff0;
 }
 
-
-.portfolio-container {
+/*.portfolio-container {
   
-}
+}*/
 
+/* portfolio image circle */
 #portfolio-img1 {
   width: 128px;
   height: 100px;
@@ -302,7 +322,9 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-/* Contact form */
+
+
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -393,6 +415,7 @@ fieldset #perempuan {
   margin-bottom: 1.1rem;
 }
 
+/* kolom pesan */
 #pesan {
   height: 200px;
 }
@@ -401,6 +424,7 @@ strong {
   color :#00b0ff;
 }
 
+/* div follow sosmed */
 .followMe {
   display: none;
   flex-direction: row;
@@ -429,7 +453,6 @@ strong {
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
 }
-
 .slide-down {
   transform: translateY(0);
   opacity: 1;
@@ -479,6 +502,7 @@ strong {
 }
 /* sosmed platform anim end */
 
+/* bottom navigation */
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -655,6 +679,7 @@ footer .credit a:hover {
       margin-right: 5%;
     }
     
+    /* tag <a> */
     .a-home {
       font-size: 1.7em;
     }
@@ -703,6 +728,7 @@ footer .credit a:hover {
       margin-bottom: 20px;
     }
     
+    /* footer sosmed text */
     .followMe .follow-me {
      width: 50%;
     }
@@ -744,11 +770,13 @@ footer .credit a:hover {
       margin-bottom: 20px;
     }
     
+    /* Responsive pembungkus contact, table */
     .contact_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
+    
     .followMe {
       display: flex;
     }

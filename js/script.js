@@ -48,18 +48,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const divMain = document.querySelector('.main-content');
     const mainHeader = document.querySelector('.main-header');
     const sayNama = document.getElementById('hai_nama');
-    //check local storage
+    
+
     const storedName = localStorage.getItem('welcomeName');
+
+    //check local storage
 
     if (storedName) {
         sayNama.textContent = storedName;
         welcomePopup.style.display = 'none';
         overlay.style.display = 'none';
+        //set display
         divMain.style.display = 'grid';
         mainHeader.style.display = 'flex';
     } else {
         welcomePopup.style.display = 'block';
         overlay.style.display = 'block';
+        // set display
         divMain.style.display = 'none';
         mainHeader.style.display = 'none';
     }
@@ -70,7 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         const welcomeName = document.getElementById('welcome_name').value;
-
+        
+        // input element | nama | welcome
+        
         if (welcomeName) {
             localStorage.setItem('welcomeName', welcomeName);
 
@@ -84,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// btn edit nama
 const editNama = document.getElementById('editName');
     editNama.addEventListener('click', () => {
       const welcomePopup = document.getElementById('welcome-popup');
@@ -107,6 +115,7 @@ const editNama = document.getElementById('editName');
         // Sembunyikan popup setelah submit
         welcomePopup.style.display = 'none';
         overlay.style.display = 'none';
+        // tampilkan konten
         divMain.style.display = 'grid';
         mainHeader.style.display = 'flex';
     });
@@ -125,7 +134,7 @@ const editNama = document.getElementById('editName');
         cekCheckBox(newRow.querySelector('.row-checkbox'));
     }
 
-    // Checkbox
+    // Checkbox status
     function cekCheckBox(checkbox) {
         checkbox.addEventListener('change', upBtn);
     }
@@ -138,14 +147,14 @@ const editNama = document.getElementById('editName');
         upBtn();
     });
 
-    // Update btn
+    // fungsi Update btn
     function upBtn() {
         const checkedBoxes = table.querySelectorAll('.row-checkbox:checked');
         editButton.disabled = checkedBoxes.length !== 1;
         deleteButton.disabled = checkedBoxes.length === 0;
     }
 
-    // Edit button functionality
+    // Edit button data
     editButton.addEventListener('click', function() {
         const checkedRow = table.querySelector('.row-checkbox:checked').closest('tr');
         const cells = checkedRow.cells;
@@ -155,12 +164,12 @@ const editNama = document.getElementById('editName');
         document.querySelector(`input[name="jenisKelamin"][value="${cells[3].textContent}"]`).checked = true;
         document.getElementById('pesan').value = cells[4].textContent;
 
-        // Remove the edited row
+        // Remove row
         checkedRow.remove();
         upBtn();
     });
 
-    // Delete button functionality
+    // Delete button data
     deleteButton.addEventListener('click', function() {
         const checkedBoxes = table.querySelectorAll('.row-checkbox:checked');
         checkedBoxes.forEach(cb => {
@@ -171,7 +180,7 @@ const editNama = document.getElementById('editName');
     });
 
 
-//  Sosmed platform anim
+//  Sosmed platform animasi text slide-up
 const socialMedia = document.querySelector('.socialMedia');
 const platforms = ['Instagram', 'Telegram', 'Github'];
 let iMedsos = 0;
@@ -194,7 +203,7 @@ function changeText() {
 }
 
 // Ulangi setiap 3 detik
-setInterval(changeText, 2400);
+setInterval(changeText, 3000);
 
 
 
@@ -210,13 +219,14 @@ const header = document.querySelector('.main-header');
   const fMedsos = document.querySelector('.followMe');
 
 
-// scroll listener
+// scroll listener, 
 window.addEventListener('scroll', () => {
   const linkFooterTop = linksMe.getBoundingClientRect().top;
   const windowHeight = window.innerHeight;
   
   const checkAtapFooter = atapFooter.getBoundingClientRect().top;
   
+  // anim div 'Follow me'
   if (checkAtapFooter <= windowHeight) {
     
     setTimeout(() => {
@@ -233,7 +243,9 @@ window.addEventListener('scroll', () => {
       fMedsos.classList.add('hidden');
     }, 500);
   }
-
+  
+  
+  // responsive navigation
   if (header.getBoundingClientRect().bottom < 0) {
     topNav.style.display = 'none';
     if (linkFooterTop <= windowHeight + 15) {
@@ -242,8 +254,6 @@ window.addEventListener('scroll', () => {
   } else {
     //bottomNav.style.top = '0';
     bottomNav.style.display = 'flex';
-    
-    
   }
   } else {
     topNav.style.display = 'flex';
@@ -254,7 +264,7 @@ window.addEventListener('scroll', () => {
 
 
 
-  
+  // SVG Icon | Footer
  fetch('assets/ig-icon.svg')
   .then(response => response.text())
   .then(svgContent => {
@@ -275,8 +285,11 @@ window.addEventListener('scroll', () => {
     const facebookLink = document.getElementById('github-link');
     facebookLink.innerHTML = svgContent;
   });
+  // SVG Icon | Footer
   
-    // Smooth scrolling for navigation
+  
+  
+    // Smooth scrolling | Nav
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
