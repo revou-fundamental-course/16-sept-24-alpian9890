@@ -682,6 +682,11 @@ footer .credit a:hover {
     footer {
       padding: 0;
     }
+    
+    footer .credit {
+      margin-bottom: 20px;
+    }
+    
     .followMe .follow-me {
      width: 50%;
     }
