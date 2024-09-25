@@ -218,6 +218,7 @@ window.addEventListener('scroll', () => {
   const checkAtapFooter = atapFooter.getBoundingClientRect().top;
   
   if (checkAtapFooter <= windowHeight) {
+    
     setTimeout(() => {
       fMedsos.classList.remove('slide-up', 'hidden');
     fMedsos.classList.add('slide-down'); 
@@ -235,13 +236,13 @@ window.addEventListener('scroll', () => {
 
   if (header.getBoundingClientRect().bottom < 0) {
     topNav.style.display = 'none';
-    if (linkFooterTop <= windowHeight) {
+    if (linkFooterTop <= windowHeight + 15) {
     //bottomNav.style.bottom = (windowHeight - linkFooterTop) + 'px';
     bottomNav.style.display = 'none';
-    
   } else {
     //bottomNav.style.top = '0';
     bottomNav.style.display = 'flex';
+    
     
   }
   } else {
