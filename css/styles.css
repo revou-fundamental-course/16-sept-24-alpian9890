@@ -226,7 +226,7 @@ h2 {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background-image: url('/assets/mybanner1.png');
+  background-image: url('../assets/mybanner1.png');
   background-size: cover;
   background-position: center;
 }
