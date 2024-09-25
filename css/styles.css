@@ -125,14 +125,30 @@ h2 {
   margin: 1rem;
 }
 
+.PIC-container {
+  background-image: url('../assets/bg-portfolio.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px 25px 0 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.PIC-container .box-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-img-content {
   margin-bottom: 14px;
 }
 
 .portfolio-text-container {
-  background-color: #111;
+  background-color: #0e0e0e;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0 0 25px 25px;
 }
 #overlay {
     position: fixed;
@@ -264,7 +280,7 @@ h2 {
 
 #portfolio-img1 {
   width: 128px;
-  height: 128px;
+  height: 100px;
   border-radius: 50%;
   background-image: url('../assets/mybanner1.png');
   background-size: cover;
@@ -272,7 +288,7 @@ h2 {
 }
 #portfolio-img2 {
   width: 128px;
-  height: 128px;
+  height: 100px;
   border-radius: 50%;
   background-image: url('../assets/mybanner2.png');
   background-size: cover;
@@ -280,7 +296,7 @@ h2 {
 }
 #portfolio-img3 {
   width: 128px;
-  height: 128px;
+  height: 100px;
   border-radius: 50%;
   background-image: url('../assets/mybanner3.png');
   background-size: cover;
