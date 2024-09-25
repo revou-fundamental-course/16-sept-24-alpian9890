@@ -290,7 +290,6 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     margin-bottom: 2rem;
 }
 
@@ -674,6 +673,10 @@ footer .credit a:hover {
     .bottom-nav {
       top: 0;
       height: 5rem;
+    }
+    
+    form {
+      max-width: 600px;
     }
     
     footer {
