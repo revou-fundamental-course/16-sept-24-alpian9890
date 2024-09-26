@@ -14,15 +14,20 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
   background-color: #1a1a1a;
   color: var(--primary);
   line-height: 1.6;
+  box-sizing: border-box;
 }
+
 
 /* Header, Div, Navigation */
 header {
-    background-color: #090909;
+  top: 0;
+  left: 0;
+    background-color: #101011;
     color: var(--primary);
     padding: 1rem 0;
     display: flex;
@@ -77,14 +82,14 @@ h2 {
   margin-right: 3%;
   border: 2px solid rgba(255,255,0,0.3);
   border-radius: 30px;
-  box-sizing: border-box;
+  box-sizing: border-box
+  max-width: 1366px;
 }
 
 /* Responsive content */
 #section_portfolio .portfolio-container .portfolio-item {
   box-sizing: border-box;
-  overflow: hidden;
-  max-width: 100%;
+  max-width: auto;
 }
 
 /* judul */
@@ -101,6 +106,7 @@ h2 {
   border: 2px solid rgba(255,255,0,0.3);
   border-radius: 30px;
   padding: 0.1rem;
+  max-width: 100%;
 }
 
 /* judul */
@@ -150,7 +156,6 @@ h2 {
   display: grid;
   height: 250px;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
 }
 
 /* pembungkus judul project */
@@ -423,7 +428,7 @@ fieldset #perempuan {
 .main-content {
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .jenis-kelamin {
@@ -593,6 +598,9 @@ input[type="checkbox"] {
 
 /* Footer */
 footer {
+  bottom: 0;
+  left: 0;
+  margin: 0;
     background-color: #111;
     color: var(--primary);
     text-align: center;
@@ -786,6 +794,12 @@ footer .credit a:hover {
     .portfolio-item {
       margin-left: 1rem;
       margin-right: 1rem;
+      box-sizing: border-box;
+      overlay: hidden;
+      min-width: 320px;
+      display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0 20px;
     }
     
     .portfolio-img-content {
@@ -808,3 +822,40 @@ footer .credit a:hover {
       border: 2.5px solid rgba(255,255,0,0.3);
     }
 }
+
+@media screen and (min-width: 1435px) {
+  .portfolio-text-container {
+    background-color: #0e0e0e;
+    padding: 1rem;
+    border-radius: 0 30px 0 0;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+  .portfolio-item {
+    gap: 0;
+    grid-template-columns: 60% 40%;
+  }
+  .bungkus-img-portfolio {
+    display: flex;
+    justify-content: center;
+  }
+  .PIC-container {
+    border-radius: 0 0 0 30px;
+    height: auto;
+    width: auto;
+    gap: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    display: block;
+  }
+  .box-center {
+    width: auto;
+    align-items: start;
+    display: flex;
+  }
+  .judul-portfolio {
+    align-items: start;
+  }
+}
+
